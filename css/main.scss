@@ -4,6 +4,8 @@ $colors: (
     accent: #FFF6BB
 );
 
+$padding: 15px;
+
 @function color($color-name){
     @return mep-get($colors, $color-name)
 }
@@ -23,5 +25,12 @@ body {
         height: 100%;
         position: absolute;
         z-index: -1;
+    }
+    header a {
+        color: #fff;
+        text-decoration: none;
+        padding: $padding;
+        display: block;
+        text-decoration: uppercase;
     }
 }
