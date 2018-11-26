@@ -1,6 +1,9 @@
-$colors: (primary: #005DFF,
-primary-light:lighten(#005DFF, 40%),
-primary-dark:darken(#005DFF, 40%) accent: #FFF6BB);
+$colors: (
+primary: #005DFF,
+primary-light: lighten(#005DFF, 40%),
+primary-dark: darken(#005DFF, 40%) 
+accent: #FFF6BB
+);
 
 $padding: 15px;
 $borders: 15px;
@@ -13,12 +16,11 @@ $desktop: 840px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
-        @content
+        @content;
     }
 }
 
-body,
-html {
+body, html {
     height: 100%;
 }
 
@@ -54,7 +56,7 @@ main {
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas:
-            "primary card"
+            "primary card";
     }
 
     section#card {
@@ -123,6 +125,7 @@ main {
                 width: 30%;
                 font-size: 4em;
                 line-height: .9em;
+            }
         }
 
         p {
@@ -144,6 +147,7 @@ main {
             @include desktop {
                 display: inline-block;
                 padding: $padding $padding * 4;
+            }
         }
     }
 }
